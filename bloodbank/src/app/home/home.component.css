@@ -48,6 +48,9 @@
 .heading h2{
     font-weight: bolder;
 }
+.bloodbank{
+    padding-left: 50px;
+}
 .groups{
     display: flex;
     margin: 0px;
@@ -55,9 +58,12 @@
     clear: both;
 }
 .card{
-    width:10%;
+    width:80%;
     margin: 15px;
     background-color: grey;
+}
+.cdk-drop-list{
+    display: flex;
 }
 .card .mat-card{
     background-color: grey;
@@ -94,5 +100,18 @@
     background-color: burlywood;
 }
 .selectedgroups{
-    background-color:green !important;
+    background-color:lightgreen !important;
+}
+
+.finalGroups{
+    background-color:darkgreen !important;
+}
+.collecction{
+    height: 100%;
+    width: auto;
+    border: 2px solid grey;
+}
+.left{
+    margin-top: 50px;
+    padding: 10px;
 }
