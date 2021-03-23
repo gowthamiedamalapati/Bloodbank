@@ -3,6 +3,7 @@ import { from } from 'rxjs';
 import { Bloodmodel } from '../bloodmodel';
 import { CdkDragDrop, moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
 
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -74,14 +75,14 @@ collection:any;
       }
     }
   }
-  drop(event: CdkDragDrop<[]>){
-    if(event.previousContainer===event.container){
-      moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
-    } else{
-      transferArrayItem(event.previousContainer.data,
-                        event.container.data,
-                        event.previousIndex,
-                        event.currentIndex);
-    }
-  }
+  // drop(event: CdkDragDrop<[]>){
+  //   if(event.previousContainer===event.container){
+  //     moveItemInArray(event.container.data, event.previousIndex, event.currentIndex);
+  //   } else{
+  //     transferArrayItem(event.previousContainer.data,
+  //                       event.container.data,
+  //                       event.previousIndex,
+  //                       event.currentIndex);
+  //   }
+  // }
 }
