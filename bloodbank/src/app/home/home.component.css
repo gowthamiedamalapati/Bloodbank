@@ -1,0 +1,98 @@
+/* .container .bloodgroups{
+    display: flex;
+    flex-direction: row;
+    width: 105px;
+    margin-right: 0px !important;
+}
+.main{
+    padding-left: 30px;
+    align-items: center;
+}
+.heading{
+    padding-top: 10px;
+    text-align: center;
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    margin-right: 30px;
+}
+.group input{
+    width: 60px;
+}
+.type{
+    height: 60px;
+    width: 60px;
+    border: 1px solid black;
+    background-color: grey;
+    margin-bottom: 5px;
+    
+}
+.requirement{
+    position: relative;
+}
+.form{
+    position: absolute;
+    left:25%;
+    margin-top: 30px;
+}
+.cart{
+    position: absolute;
+    left: 75%;
+    margin-top: 60px;
+} */
+.heading{
+    padding-top: 30px;
+    text-align: center;
+}
+.heading h2{
+    font-weight: bolder;
+}
+.groups{
+    display: flex;
+    margin: 0px;
+    width: 100%;
+    clear: both;
+}
+.card{
+    width:10%;
+    margin: 15px;
+    background-color: grey;
+}
+.card .mat-card{
+    background-color: grey;
+}
+.input{
+    width: 50px;
+}
+.groups .mat-form-field{
+    width: 60px;
+}
+.bloodbank button{
+    width: 100%;
+    padding: 0px;
+    background-color: burlywood;
+}
+.right{
+    margin-top: 50px;
+    padding: 10px;
+}
+.reqirement .mat-form-field{
+    display: flex;
+}
+.enquiry h4{
+    font-weight: bolder;
+}
+.formenquiry{
+    display: flex;
+}
+.question{
+    padding-top:18px;
+    margin-right: 10px;
+}
+.reqirement button{
+    background-color: burlywood;
+}
+.selectedgroups{
+    background-color:green !important;
+}

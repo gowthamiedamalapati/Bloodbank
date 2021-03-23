@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="heading">
+        <h2>Blood Bank</h2>
+    </div>
+    <div class="bloodbank">
+    <div class="groups">
+    <div class="card" *ngFor="let blood of bloodgroups">
+    <mat-card id={{blood.bloodGroup}}>
+        <mat-card-title>
+        {{blood.bloodGroup}}
+        </mat-card-title>
+        <mat-card-content>
+         <mat-form-field >
+             <mat-button>
+                 <input class="input" matInput [(ngModel)]="blood.count" >
+            </mat-button>
+        </mat-form-field>  
+        </mat-card-content>
+    </mat-card>  
+</div>
+</div>
+<button mat-raised-button (click)="enter()">Update Records</button>
+</div>
+<div class="row">
+<div class="col-md-6 right">
+<div class="reqirement">
+    <div class="enquiry"><h4>Check for the availability</h4></div>
+    <div class="formenquiry">   
+    <div class="question">Required Bloodgroup:</div>
+    <mat-form-field appearance="outline">
+        <input matInput [(ngModel)]="requiredBlood">
+    </mat-form-field>
+    </div>
+    <div class="formenquiry">
+    <div class="question">Number of bottels:</div> 
+    <mat-form-field appearance="outline">
+        <input matInput [(ngModel)]="requiredCount">
+    </mat-form-field>
+    </div>
+    <button mat-raised-button (click)="check()">Check availability</button>
+</div>
+</div>
+</div>
+</div>
