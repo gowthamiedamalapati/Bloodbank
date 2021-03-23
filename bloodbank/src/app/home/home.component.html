@@ -6,7 +6,7 @@
     <div class="groups">
         <div class="list"
          cdkDropList
-         #groupslist="cdkDropList"
+         #groupsList="cdkDropList"
          [cdkDropListData]="bloodgroups"
          [cdkDropListConnectedTo]="[collection]"
          (cdkDropListDropped)="drop($event)">
@@ -46,10 +46,9 @@
 </div>
 </div>
 <div class="col-md-6 left">
-    <div class="collecction">
-        <div
+    <div class="list"
         cdkDropList
-        #bloodgroup="cdkDropList"
+        #collectionList="cdkDropList"
         [cdkDropListData]="collection"
         [cdkDropListConnectedTo]="[bloodgroups]"
         (cdkDropListDropped)="drop($event)">
@@ -71,6 +70,6 @@
     </div>
 </div>
 </div>
-</div>
+
 
   

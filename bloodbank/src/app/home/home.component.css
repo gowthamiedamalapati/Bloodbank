@@ -68,8 +68,11 @@
 .card .mat-card{
     background-color: grey;
 }
-.input{
-    width: 50px;
+.input {
+    width: 100px;
+}
+.input .mat-form-field-appearance-legacy .mat-form-field-underline{
+    width: 30%;
 }
 .groups .mat-form-field{
     width: 60px;
@@ -106,7 +109,7 @@
 .finalGroups{
     background-color:darkgreen !important;
 }
-.collecction{
+.list{
     height: 100%;
     width: auto;
     border: 2px solid grey;
