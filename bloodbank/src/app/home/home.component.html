@@ -4,12 +4,6 @@
     </div>
     <div class="bloodbank">
     <div class="groups">
-        <div class="list"
-         cdkDropList
-         #groupsList="cdkDropList"
-         [cdkDropListData]="bloodgroups"
-         [cdkDropListConnectedTo]="[collection]"
-         (cdkDropListDropped)="drop($event)">
     <div class="card" *ngFor="let blood of bloodgroups | keyvalue" cdkDrag>
     <mat-card id={{blood.key}}>
         <mat-card-title>
@@ -21,7 +15,6 @@
         </mat-form-field>  
         </mat-card-content>
     </mat-card>  
-</div>
 </div>
    
 </div>
@@ -46,27 +39,26 @@
 </div>
 </div>
 <div class="col-md-6 left">
-    <div class="list"
+    <div class="list"></div>
+    <!-- <div class="list"
         cdkDropList
         #collectionList="cdkDropList"
         [cdkDropListData]="collection"
         [cdkDropListConnectedTo]="[bloodgroups]"
         (cdkDropListDropped)="drop($event)">
-   <!-- <div class="card" *ngFor="let blood of collection | keyvalue" cdkDrag>
+   <div class="card" *ngFor="let blood of collection | keyvalue" cdkDrag>
    <mat-card id={{blood.key}}>
        <mat-card-title>
        {{blood.value.bloodGroup}}
        </mat-card-title>
        <mat-card-content>
         <mat-form-field >
-            <mat-button>
-                <input class="input" matInput [(ngModel)]="blood.value.count">
-           </mat-button>
+           {{blood.value.count}}
        </mat-form-field>  
        </mat-card-content>
    </mat-card>   
- </div> -->
-</div>
+ </div>
+</div> -->
     </div>
 </div>
 </div>
